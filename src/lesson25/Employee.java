@@ -1,9 +1,6 @@
 package lesson25;
 
 public class Employee {
-
-	public Employee() {
-	}
 	
 	public int getHours() {
 		return 40;
