@@ -13,6 +13,15 @@ public class Testing extends Employee {
 		Secretary joe = new Secretary();
 		printInfo("joe",joe);
 		joe.takeDictation("Write me a letter...");
+		
+		LegalSecretary joey = new LegalSecretary();
+		printInfo("joey",joey);
+		joey.takeDictation("Write me a letter...");
+		joey.fileLegalBriefs();
+		
+		Lawyer yasuko = new Lawyer();
+		printInfo("yasuko",yasuko);
+		yasuko.sue("Tim Hickey");
 			}
 	
 	public static void printInfo(String name,Employee e) {
