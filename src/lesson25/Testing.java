@@ -22,6 +22,10 @@ public class Testing extends Employee {
 		Lawyer yasuko = new Lawyer();
 		printInfo("yasuko",yasuko);
 		yasuko.sue("Tim Hickey");
+		
+		Marketer caitlin = new Marketer();
+		printInfo("caitlin",caitlin);
+		caitlin.advertise();
 			}
 	
 	public static void printInfo(String name,Employee e) {
