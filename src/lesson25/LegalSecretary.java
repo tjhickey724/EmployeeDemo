@@ -1,6 +1,10 @@
 package lesson25;
 
-public class LegalSecretary extends Secretary {
+public class LegalSecretary extends Employee {
+	
+	public LegalSecretary(int years) {
+		super(years);
+	}
 	
 	public void fileLegalBriefs() {
 		System.out.println("filing briefs");
