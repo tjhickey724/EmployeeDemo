@@ -1,6 +1,6 @@
 package lesson25;
 
-public class LegalSecretary extends Employee {
+public class LegalSecretary extends Secretary {
 	
 	public LegalSecretary(int years) {
 		super(years);
@@ -13,4 +13,9 @@ public class LegalSecretary extends Employee {
 	public double getSalary() {
 		return super.getSalary() + 5000;
 	}
+	
+	public int getSeniorityBonus() {
+		return 3*this.getYears();
+	}
+	
 }
