@@ -31,5 +31,9 @@ public class Employee {
 	public String getVacationForm() {
 		return "yellow";
 	}
+	
+	public String getTitle() {
+		return "generic employee";
+	}
 
 }
