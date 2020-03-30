@@ -13,5 +13,9 @@ public class Secretary extends Employee {
 	public int getSeniorityBonus() {
 		return 0;
 	}
+	
+	public String getTitle() {
+		return "Secretary";
+	}
 
 }

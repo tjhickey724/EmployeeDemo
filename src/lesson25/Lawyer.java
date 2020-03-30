@@ -21,5 +21,9 @@ public class Lawyer extends Employee {
 	public String getVacationForm(){
 		return "pink";
 	}
+	
+	public String getTitle() {
+		return "Lawyer";
+	}
 
 }

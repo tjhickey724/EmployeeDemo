@@ -18,4 +18,8 @@ public class LegalSecretary extends Secretary {
 		return 3*this.getYears();
 	}
 	
+	public String getTitle() {
+		return "Legal Secretary";
+	}
+	
 }
