@@ -1,6 +1,6 @@
 package lesson25;
 
-public abstract class Employee {
+public abstract class Employee implements Staff{
 	
 	private int years;
 	

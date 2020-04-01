@@ -7,7 +7,7 @@ public class Testing {
 	}
 	
 	public static void main(String[] args) {
-		Employee chad = new Marketer(1);
+		Marketer chad = new Marketer(1);
 		printInfo("chad",chad);
 		
 		Secretary joe = new LegalSecretary(13);
@@ -27,15 +27,17 @@ public class Testing {
 		printInfo("caitlin",caitlin);
 		caitlin.advertise();
 		
-		Employee[] staff = {chad,joe,joey, yasuko,caitlin};
+		Consultant tai = new Consultant();
+		
+		Staff[] staff = {chad,joe,joey, yasuko,caitlin,tai};
 		printStaff(staff);
 		
 	}
 	
-	public static void printStaff(Employee[] staff) {
+	public static void printStaff(Staff[] staff) {
 		System.out.println("The staff is:");
 		System.out.printf("%20s %10s%n","title","salary");
-		for(Employee person: staff) {
+		for(Staff person: staff) {
 			System.out.printf("%20s %10.2f%n", 
 					person.getTitle(),person.getSalary());
 		}
