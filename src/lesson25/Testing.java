@@ -29,8 +29,13 @@ public class Testing {
 		
 		Consultant tai = new Consultant();
 		
+		Intern stu = new Intern();
+		
 		Staff[] staff = {chad,joe,joey, yasuko,caitlin,tai};
+		HR[] hr = {chad,joe,joey, yasuko,caitlin,stu};
+		
 		printStaff(staff);
+		printHR(hr);
 		
 	}
 	
@@ -40,6 +45,15 @@ public class Testing {
 		for(Staff person: staff) {
 			System.out.printf("%20s %10.2f%n", 
 					person.getTitle(),person.getSalary());
+		}
+	}
+	
+	public static void printHR(HR[] hr) {
+		System.out.println("The HR qualifing staff is:");
+		System.out.printf("%5s %10s%n","hours","vacation");
+		for(HR person: hr) {
+			System.out.printf("%5d %5d%n", 
+					person.getHours(),person.getVacationDays());
 		}
 	}
 	

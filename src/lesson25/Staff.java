@@ -8,6 +8,11 @@ package lesson25;
  *
  */
 public interface Staff {
+	/**
+		 * @author presenting
+		 *
+		 */
+
 	public double getSalary();
 	public String getTitle();
 	
