@@ -1,6 +1,6 @@
 package lesson25;
 
-public class Secretary extends Employee {
+public abstract class Secretary extends Employee {
 	
 	public Secretary(int years) {
 		super(years);
@@ -13,9 +13,10 @@ public class Secretary extends Employee {
 	public int getSeniorityBonus() {
 		return 0;
 	}
-	
+	/*
 	public String getTitle() {
 		return "Secretary";
 	}
+	*/
 
 }

@@ -1,6 +1,6 @@
 package lesson25;
 
-public class Employee {
+public abstract class Employee {
 	
 	private int years;
 	
@@ -32,8 +32,7 @@ public class Employee {
 		return "yellow";
 	}
 	
-	public String getTitle() {
-		return "generic employee";
-	}
+	
+	public abstract String getTitle(); 
 
 }

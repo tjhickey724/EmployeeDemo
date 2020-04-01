@@ -26,4 +26,5 @@ public class Lawyer extends Employee {
 		return "Lawyer";
 	}
 
+
 }

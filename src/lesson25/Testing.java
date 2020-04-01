@@ -7,10 +7,10 @@ public class Testing {
 	}
 	
 	public static void main(String[] args) {
-		Employee chad = new Employee(1);
+		Employee chad = new Marketer(1);
 		printInfo("chad",chad);
 		
-		Secretary joe = new Secretary(13);
+		Secretary joe = new LegalSecretary(13);
 		printInfo("joe",joe);
 		joe.takeDictation("Write me a letter...");
 		
@@ -26,14 +26,28 @@ public class Testing {
 		Marketer caitlin = new Marketer(5);
 		printInfo("caitlin",caitlin);
 		caitlin.advertise();
-			}
+		
+		Employee[] staff = {chad,joe,joey, yasuko,caitlin};
+		printStaff(staff);
+		
+	}
+	
+	public static void printStaff(Employee[] staff) {
+		System.out.println("The staff is:");
+		System.out.printf("%20s %10s%n","title","salary");
+		for(Employee person: staff) {
+			System.out.printf("%20s %10.2f%n", 
+					person.getTitle(),person.getSalary());
+		}
+	}
 	
 	public static void printInfo(String name,Employee e) {
+		System.out.println("\n Info on employee "+e);
 		System.out.println(name+" has " + e.getHours() + " hours of work per week.");
 		System.out.println(name+" has a salary of " + e.getSalary() + ".");
 		System.out.println(name+" has " + e.getVacationDays() + " vacations days.");
 		System.out.println(name+" vacation day form is " + e.getVacationForm() + ".");
-
+		System.out.println(e.getTitle());
 	}
 
 }
